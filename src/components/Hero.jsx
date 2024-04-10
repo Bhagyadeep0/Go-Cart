@@ -6,7 +6,7 @@ const Hero = () => {
     { title: "30-day", desc: "Hassle-Free Returns " },
   ];
   return (
-    <div className="py-10 px-5 bg-gray-800/10">
+    <div className="py-10 px-5 bg-gray-800/10 cut">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-[50px] container m-auto">
         {/* text,buttons,box */}
         <div className="flex-1">
