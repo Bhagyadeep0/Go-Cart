@@ -26,8 +26,12 @@
         @apply py-3 px-5 bg-yellow-50 leading-none text-[15px] rounded-full transition-all duration-300 ease-in;
     }
 }
-.cut {
+.divide-bottom {
     clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+  }
+  .divide-top{
+    clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+  margin-top: -40px;
   }
 .wave-y {
     --mask:
