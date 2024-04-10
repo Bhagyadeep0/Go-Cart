@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 //swiper modules
-import { FreeMode, Pagination,EffectCoverflow } from "swiper/modules";
+import { FreeMode, Pagination, EffectCoverflow } from "swiper/modules";
 
 // react icons
 import { FaQuoteLeft } from "react-icons/fa";
@@ -60,7 +60,7 @@ const Testimonials = () => {
 
   return (
     <section>
-      <div className="flex flex-col justify-center items-center container mx-auto py-10 space-y-5 ">
+      <div className="flex flex-col justify-center items-center container mx-auto mb-5 py-10 space-y-5 ">
         {/* text */}
         <div className="flex flex-col text-center items-center container mx-auto ">
           <h1 className="h1">
@@ -68,7 +68,9 @@ const Testimonials = () => {
             <hr className="max-w-[100%] bg-blue-600 m-auto" />
           </h1>
           <p>
-         Our customers are the heartbeat of our brand. Explore the heartfelt testimonials shared by those who have experienced the magic of our company.
+            Our customers are the heartbeat of our brand. Explore the heartfelt
+            testimonials shared by those who have experienced the magic of our
+            company.
           </p>
         </div>
         {/* --------------------------slider------------------------------- */}
@@ -83,9 +85,9 @@ const Testimonials = () => {
               spaceBetween: 15,
             },
           }}
-          effect={'coverflow'}
+          effect={"coverflow"}
           centeredSlides={true}
-          slidesPerView={'auto'}
+          slidesPerView={"auto"}
           freeMode={true}
           coverflowEffect={{
             rotate: 50,
@@ -97,7 +99,7 @@ const Testimonials = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination,EffectCoverflow]}
+          modules={[FreeMode, Pagination, EffectCoverflow]}
           className="h-full w-full container mx-auto"
         >
           {testimonialsData.map((item, i) => (

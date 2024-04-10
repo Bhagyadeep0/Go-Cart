@@ -1,53 +1,60 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    *,*::after,*::before{
-        @apply font-manrope box-border;
-    }
-    body{
-        @apply mt-[90px];
-    }
-    .h1{
-        @apply text-[40px] font-bold leading-none mb-5;
-    }
-    .h2{
-        @apply text-[25px] lg:text-[30px] font-bold leading-none mb-5;
-    }
-    .h3{
-        @apply text-[20px] lg:text-[25px] font-bold leading-none mb-5;
-    }
-    .p{
-        @apply text-[18px] lg:text-[20px] font-light leading-none;
-    }
-    .btn{
-        @apply py-3 px-5 bg-yellow-50 leading-none text-[15px] rounded-full transition-all duration-300 ease-in;
-    }
+  *,
+  *::after,
+  *::before {
+    @apply font-manrope box-border;
+  }
+  body {
+    @apply mt-[90px];
+  }
+  .h1 {
+    @apply text-[40px] font-bold leading-none mb-5;
+  }
+  .h2 {
+    @apply text-[25px] lg:text-[30px] font-bold leading-none mb-5;
+  }
+  .h3 {
+    @apply text-[20px] lg:text-[25px] font-bold leading-none mb-5;
+  }
+  .p {
+    @apply text-[18px] lg:text-[20px] font-light leading-none;
+  }
+  .btn {
+    @apply py-3 px-5 bg-yellow-50 leading-none text-[15px] rounded-full transition-all duration-300 ease-in;
+  }
 }
 .divide-bottom {
-    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
-  }
-  .divide-top{
-    clip-path: polygon(0 0,100% 50px,100% 100%,0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+.divide-top {
+  clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
   margin-top: -40px;
-  }
+}
 .wave-y {
-    --mask:
-    radial-gradient(33.54px at 50% 45px,#000 99%,#0000 101%) calc(50% - 30px) 0/60px 51% repeat-x,
-    radial-gradient(33.54px at 50% -30px,#0000 99%,#000 101%) 50% 15px/60px calc(51% - 15px) repeat-x,
-    radial-gradient(33.54px at 50% calc(100% - 45px),#000 99%,#0000 101%) calc(50% - 30px) 100%/60px 51% repeat-x,
-    radial-gradient(33.54px at 50% calc(100% + 30px),#0000 99%,#000 101%) 50% calc(100% - 15px)/60px calc(51% - 15px) repeat-x;
+  --mask: radial-gradient(33.54px at 50% 45px, #000 99%, #0000 101%)
+      calc(50% - 30px) 0/60px 51% repeat-x,
+    radial-gradient(33.54px at 50% -30px, #0000 99%, #000 101%) 50% 15px/60px
+      calc(51% - 15px) repeat-x,
+    radial-gradient(33.54px at 50% calc(100% - 45px), #000 99%, #0000 101%)
+      calc(50% - 30px) 100%/60px 51% repeat-x,
+    radial-gradient(33.54px at 50% calc(100% + 30px), #0000 99%, #000 101%) 50%
+      calc(100% - 15px) / 60px calc(51% - 15px) repeat-x;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
-  }
-  .wave-x {
-    --mask:
-    radial-gradient(33.54px at 45px 50%,#000 99%,#0000 101%) 0 calc(50% - 30px)/51% 60px repeat-y,
-    radial-gradient(33.54px at -30px 50%,#0000 99%,#000 101%) 15px 50%/calc(51% - 15px) 60px repeat-y,
-		radial-gradient(33.54px at calc(100% - 45px) 50%,#000 99%,#0000 101%) 100% calc(50% - 30px)/51% 60px repeat-y,
-    radial-gradient(33.54px at calc(100% + 30px) 50%,#0000 99%,#000 101%) calc(100% - 15px) 50%/calc(51% - 15px) 60px repeat-y;
+  mask: var(--mask);
+}
+.wave-x {
+  --mask: radial-gradient(33.54px at 45px 50%, #000 99%, #0000 101%) 0
+      calc(50% - 30px) / 51% 60px repeat-y,
+    radial-gradient(33.54px at -30px 50%, #0000 99%, #000 101%) 15px 50% /
+      calc(51% - 15px) 60px repeat-y,
+    radial-gradient(33.54px at calc(100% - 45px) 50%, #000 99%, #0000 101%) 100%
+      calc(50% - 30px) / 51% 60px repeat-y,
+    radial-gradient(33.54px at calc(100% + 30px) 50%, #0000 99%, #000 101%)
+      calc(100% - 15px) 50% / calc(51% - 15px) 60px repeat-y;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
-  }
+  mask: var(--mask);
+}
