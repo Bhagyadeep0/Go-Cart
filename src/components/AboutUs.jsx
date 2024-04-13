@@ -1,5 +1,6 @@
 // icons
 import { AiFillBulb,AiFillStar } from "react-icons/ai";
+import ScrollReveal from "./ScrollReveal";
 const AboutUs = () => {
   const aboutData = [
     {
@@ -35,6 +36,7 @@ const AboutUs = () => {
   ];
 
   return (
+    <ScrollReveal>
     <section className="bg-yellow-300 wave-y">
       <div className="flex flex-col container mx-auto gap-5 py-10">
         {/* text */}
@@ -60,6 +62,7 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 };
 

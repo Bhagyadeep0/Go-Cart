@@ -1,5 +1,3 @@
-// react router
-import { NavLink } from "react-router-dom";
 
 const Link = () => {
   // navigation data
@@ -9,9 +7,9 @@ const Link = () => {
 
   ];
   return (
-      <ul className="flex gap-y-5 gap-x-8 items-center">
+      <ul className=" space-y-5  text-center">
       {navData.map((item, index) => (
-          <li className="text-[20px] capitalize" key={index}>
+          <li className="text-[30px] lg:[text-20px] capitalize text-white hover:text-yellow-300 transition-all duration-300 ease-linear" key={index}>
             <a href={item.path}>{item.name}</a>
         </li>
       ))}

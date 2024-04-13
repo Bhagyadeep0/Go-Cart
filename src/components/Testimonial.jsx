@@ -11,6 +11,7 @@ import { FreeMode, Pagination, EffectCoverflow } from "swiper/modules";
 
 // react icons
 import { FaQuoteLeft } from "react-icons/fa";
+import ScrollReveal from "./ScrollReveal";
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -59,6 +60,7 @@ const Testimonials = () => {
   ];
 
   return (
+    <ScrollReveal>
     <section>
       <div className="flex flex-col justify-center items-center container mx-auto mb-5 py-10 space-y-5 ">
         {/* text */}
@@ -133,6 +135,7 @@ const Testimonials = () => {
         </Swiper>
       </div>
     </section>
+    </ScrollReveal>
   );
 };
 

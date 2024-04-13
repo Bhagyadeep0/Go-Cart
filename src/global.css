@@ -6,7 +6,7 @@
   *,
   *::after,
   *::before {
-    @apply font-manrope box-border;
+    @apply font-manrope box-border scroll-smooth;
   }
   body {
     @apply mt-[90px];

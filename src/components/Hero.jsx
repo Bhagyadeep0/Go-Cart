@@ -6,7 +6,7 @@ const Hero = () => {
     { title: "30-day", desc: "Hassle-Free Returns " },
   ];
   return (
-    <div className="py-10 px-5 bg-gray-800/10 cut">
+    <div className="py-10 px-5 bg-gray-800/10 divide-bottom">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-[50px] container m-auto">
         {/* text,buttons,box */}
         <div className="flex-1">
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
         {/* images */}
         <div className="flex-1 w-1/2 max-w-[550px] ">
-          <img src="/dog-yellow.jpg" alt="jacket" className="object-cover rounded-ss-[50%] rounded-se-[50%] rounded-es-[50px] rounded-ee-[50px]"/>
+          <img src="/6.jpg" alt="jacket" className="h-full w-full object-cover rounded-ss-[50%] rounded-se-[50%] rounded-es-[50px] rounded-ee-[50px]"/>
         </div>
       </div>
     </div>

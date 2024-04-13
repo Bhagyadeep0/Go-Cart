@@ -1,7 +1,9 @@
 import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const Footer = () => {
   return (
+    <ScrollReveal>
     <section className="bg-yellow-300 divide-top py-10">
       <div className="flex flex-col md:flex-row gap-5 justify-between container mx-auto py-5 r ">
         {/* logo*/}
@@ -23,6 +25,7 @@ const Footer = () => {
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 };
 

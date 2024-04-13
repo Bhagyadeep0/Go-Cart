@@ -1,16 +1,20 @@
 // react-icons
 import { AiFillShopping } from "react-icons/ai";
+import ScrollReveal from "./ScrollReveal";
 
 const Products = () => {
   //product data
   const productsData = [
-    { name: "Classic something", price: "$39.99", img: "/pet-pink.jpg" },
-    { name: "Classic something", price: "$39.99", img: "/pet-pink.jpg" },
-    { name: "Classic something", price: "$39.99", img: "/pet-pink.jpg" },
-    { name: "Classic something", price: "$39.99", img: "/pet-pink.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/0.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/1.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/2.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/3.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/4.jpg" },
+    { name: "Classic something", price: "$39.99", img: "/5.jpg" },
   ];
 
   return (
+    <ScrollReveal>
     <section>
       <div className="flex flex-col space-y-10 container mx-auto py-10">
         {/* text & buttons */}
@@ -57,11 +61,11 @@ const Products = () => {
                 className="flex flex-col flex-wrap cursor-pointer"
               >
                 {/* img */}
-                <div className="w-fit overflow-hidden relative group rounded-xl">
+                <div className="h-[300px] lg:h-[500px]  overflow-hidden relative group rounded-xl">
                   <img
                     src={item.img}
                     alt="product.img"
-                    className="object-cover group-hover:scale-110 transition-all duration-500"
+                    className="h-fit md:h-full w-full object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
                   />
                   <span className="absolute -bottom-5 -right-5 bg-white p-10 z-[1] rounded-full "></span>
                   <span className="z-[2] absolute bottom-0 right-0 text-3xl bg-yellow-300 group-hover:bg-yellow-600 p-2 rounded-full transition-all duration-300">
@@ -80,6 +84,7 @@ const Products = () => {
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 };
 
