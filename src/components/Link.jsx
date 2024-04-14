@@ -3,7 +3,7 @@ const Link = () => {
   // navigation data
   const navData = [
     { name: "home", path: "/" },
-    { name: "products", path: "/products" },
+    { name: "Contact", path: "/contact" },
 
   ];
   return (
